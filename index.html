@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Template</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<!-- Other scripts and stylesheets -->
+</head>
+<body>
+    <a href="update.html" >Update user</a>
+    <h1>User Profile</h1>
+    
+    <form id="userDataForm">
+        <label for="userName">Name:</label>
+        <input type="text" id="userName" required>
+        <br>
+        <label for="progress">Progress:</label>
+        <input type="number" id="progress" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="admin.js"></script>
+</body>
+</html>

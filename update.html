@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update User Progress</title>
+    <!-- Include Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+<body>
+    <a href="index.html" >Add user</a>
+    <h1>Update User Progress</h1>
+    <form id="searchForm">
+        <label for="searchName">Search User by Name:</label>
+        <input type="text" id="searchName" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <h2>User Details</h2>
+    <div id="userDetails">
+        <p><strong>Name:</strong> <span id="userName"></span></p>
+        <p><strong>Progress:</strong> <span id="userProgress"></span></p>
+        <p><strong>Last Updated Time:</strong> <span id="lastUpdatedTime"></span></p> <!-- New line for Last Updated Time -->
+    </div>
+
+    <button id="incrementButton">Increment Progress</button>
+
+    <script src="update.js"></script>
+</body>
+</html>
